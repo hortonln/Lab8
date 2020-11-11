@@ -15,7 +15,7 @@ int randomNum;
 GuessingGame(){
 
 Random r = new Random();
-randomNum = r.nextInt(101)+1;
+randomNum = r.nextInt(100)+1;
 
 JFrame frame = new JFrame ("Guessing Game");
 frame.setLayout(new FlowLayout());
@@ -67,7 +67,7 @@ public void actionPerformed(ActionEvent ae) {
 
      else if (ae.getActionCommand().equals("Play Again")){
        Random r = new Random();
-       randomNum = r.nextInt(101)+1;
+       randomNum = r.nextInt(100)+1;
        jlabContents1.setText("");
        jlabContents2.setText("");
      }
